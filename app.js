@@ -20,7 +20,7 @@ let randomNum = (arr) => {
 
 const makeSentence = () => {
   const sentence = `${possessivePronouns[randomNum(possessivePronouns)]} ${adjectives[randomNum(adjectives)]} 
-  ${pluralNouns[randomNum(pluralNouns)]} ${helpingVerbs[randomNum(helpingVerbs)]} ${adjectives[randomNum(adjectives)]}`
+  ${pluralNouns[randomNum(pluralNouns)]} ${helpingVerbs[randomNum(helpingVerbs)]} ${adjectives[randomNum(adjectives)]} ${nouns[randomNum(nouns)]} `
   blockQuote.innerHTML = sentence
   sentenceDisplayDiv.append(blockQuote)
   container.append(sentenceDisplayDiv)
