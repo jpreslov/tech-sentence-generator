@@ -1,7 +1,6 @@
-const list = ['AWS', 'client-side', 'server-side', 'scalable', 'solution', 'solutions', 'growth', ]
 const adjectives = ['exponential', 'innovative', 'multicloud', 'cloud-based']
 const singularNouns = ['innovation', 'technology', 'synergy', 'solution']
-const pluralNouns = ['innovations', 'technologies', 'synergies', 'solutions']
+const pluralNouns = ['innovations', 'technologies', 'synergies', 'solutions', 'facets', 'implementations', 'people', 'societies', 'nations']
 const adverbs = ['elegantly', 'constantly', 'intelligently', 'relentlessly', 'always', 'never', 'indubitably', 'flawlessly']
 const pastTenseVerbs = ['implemented', 'constructed', 'concocted', 'developed', 'strategized']
 // const pastTenseVerbs = ['implemented', 'constructed', 'concocted', 'developed', 'strategized']
@@ -23,7 +22,7 @@ let randomNum = (arr) => {
 const makeSentence = () => {
   const sentence = `${possessivePronouns[randomNum(possessivePronouns)]} ${adjectives[randomNum(adjectives)]} 
   ${pluralNouns[randomNum(pluralNouns)]} ${helpingVerbs[randomNum(helpingVerbs)]} ${adjectives[randomNum(adjectives)]} ${nouns[randomNum(nouns)]} 
-  ${linkingVerbs[randomNum(linkingVerbs)]} ${determiners[randomNum(determiners)]}.`
+  ${linkingVerbs[randomNum(linkingVerbs)]} ${determiners[randomNum(determiners)]} ${pluralNouns[randomNum(pluralNouns)]}.`
   blockQuote.innerHTML = sentence
   blockQuote.id = 'quote'
   sentenceDisplayDiv.append(blockQuote)
