@@ -24,7 +24,7 @@ const makeSentence = () => {
   ${pluralNouns[randomNum(pluralNouns)]} ${helpingVerbs[randomNum(helpingVerbs)]} ${adjectives[randomNum(adjectives)]} ${nouns[randomNum(nouns)]} 
   ${linkingVerbs[randomNum(linkingVerbs)]} ${determiners[randomNum(determiners)]} ${pluralNouns[randomNum(pluralNouns)]}.`
   blockQuote.innerHTML = sentence
-  blockQuote.id = 'quote'
+  blockQuote.setAttribute('id', 'quote')
   sentenceDisplayDiv.append(blockQuote)
   container.append(sentenceDisplayDiv)
 }

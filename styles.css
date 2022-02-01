@@ -1,5 +1,6 @@
-#link {
-  padding: 1em;
+#quote-text {
+  margin: auto;
+  padding: 0.7em;
   background-color: grey;
   border-radius: 3px;
 }
