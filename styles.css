@@ -1,5 +1,8 @@
 #quote {
-  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
   padding: 0.7em;
   background-color: rgb(216, 208, 208);
   border-radius: 3px;
