@@ -1,6 +1,6 @@
 #quote {
-  margin: auto;
+  margin: 2em auto;
   padding: 0.7em;
-  background-color: grey;
+  background-color: rgb(216, 208, 208);
   border-radius: 3px;
 }
