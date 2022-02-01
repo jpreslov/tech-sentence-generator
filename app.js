@@ -1,5 +1,5 @@
-const adjectives = ['exponential', 'innovative', 'multicloud', 'cloud-based']
-const singularNouns = ['innovation', 'technology', 'synergy', 'solution']
+const adjectives = ['exponential', 'innovative', 'multicloud', 'cloud-based', 'scalable', 'company-wide', 'automated', 'encrypted']
+const singularNouns = ['innovation', 'technology', 'synergy', 'solution', '']
 const pluralNouns = ['innovations', 'technologies', 'synergies', 'solutions', 'facets', 'implementations', 'people', 'societies', 'nations']
 const adverbs = ['elegantly', 'constantly', 'intelligently', 'relentlessly', 'always', 'never', 'indubitably', 'flawlessly']
 const pastTenseVerbs = ['implemented', 'constructed', 'concocted', 'developed', 'strategized']
