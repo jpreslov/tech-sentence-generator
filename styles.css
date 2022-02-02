@@ -8,6 +8,12 @@ body {
   display: inherit;
   flex-direction: column;
   position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+#generate-btn {
+  max-width: 7em 
 }
 
 #quote {

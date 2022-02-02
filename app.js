@@ -2,9 +2,9 @@ const adjectives = ['exponential', 'innovative', 'multicloud', 'cloud-based', 's
 const adverbs = ['elegantly', 'constantly', 'intelligently', 'relentlessly', 'always', 'never', 'indubitably', 'flawlessly']
 const determiners = ['many', 'few', 'countless', 'no']
 
-const container = document.getElementById('sentence')
+const sentenceDisplayDiv = document.getElementById('sentence')
 const btn = document.getElementById('generate-btn')
-const sentenceDisplayDiv = document.createElement('div')
+// const sentenceDisplayDiv = document.createElement('div')
 const blockQuote = document.createElement('blockquote')
 
 // const singPlur = () => {
@@ -40,8 +40,7 @@ const pronouns = {
 }
 
 const makeSentence = () => {
-  let num = (arr) => randomNum(arr)
-  let randomNum = (arr) => {
+  let num = (arr) => {
     return Math.floor(Math.random() * arr.length)
   }
   const words = `${pronouns.possessive[num(pronouns.possessive)]} ${adjectives[num(adjectives)]} 
@@ -50,11 +49,10 @@ const makeSentence = () => {
   ${adjectives[num(adjectives)]}, ${adjectives[num(adjectives)]} ${nouns.plural[num(nouns.plural)]}.`
 
   const sentence = `${words.charAt(0).toUpperCase() + words.slice(1)}`
-  const saveBtn = document.createElement('button')
   blockQuote.innerHTML = sentence
   blockQuote.setAttribute('id', 'quote')
   sentenceDisplayDiv.append(blockQuote)
-  container.append(sentenceDisplayDiv)
+  // container.append(sentenceDisplayDiv)
 }
 
 btn.addEventListener('click', () => makeSentence())
